@@ -1,0 +1,218 @@
+
+
+html{
+  box-sizing: border-box;
+  background: pink;
+}
+body{
+	background: pink;;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+h1{
+font-family: Impact, Charcoal, sans-serif;
+font-size: 13vw ;
+color: White;
+text-shadow: 2px 3px rgba(0,0,0,0.6);
+transition: all 1s ease-in-out;
+z-index:5;
+
+
+}
+h2{
+text-align: center;
+}
+
+h1:hover{
+color: #ffff66;
+text-shadow: 4px 6px rgba(0,0,0,0.8);
+
+}
+#h12{
+font-size: 4vw ;
+	
+}
+header {
+margin: 0 auto;
+width: 90vw;
+height: 40vw;
+box-shadow: -5px 5px 20px rgba(0,0,0,0.3);	
+background: white;
+
+}
+
+#content{
+display: flex;
+width: 90vw;
+margin: 0 auto;	
+margin-top: 2%;
+margin-bottom:10%;
+box-shadow: -5px 5px 20px rgba(0,0,0,0.3);
+background: white;
+}
+article{
+width: 55%;
+margin: 0 auto;
+
+}
+
+aside{
+
+width: 35%;
+box-shadow: -5px 5px 20px rgba(0,0,0,0.3);
+margin: 0 auto;
+}
+
+
+#logo {
+width: 19vw;	
+transition: all 3s ease-in-out;
+z-index:10;
+}
+#logo:hover{
+transform: scale(1.6) rotate(560deg);
+
+}
+
+#logobox {
+display: inline-flex;
+width: 80vw;
+height: 30vw;
+margin: 0 auto;
+
+}
+
+nav div{
+display: flex;
+background: black;
+flex-flow: row nowrap;
+justify-content: space-around; 
+height: 2vw;
+}
+
+nav div a{
+text-decoration:none;
+color: White;	
+transition: all ease-in-out 0.1s;
+}
+nav div a:hover{
+transform: scale(1.2);
+}
+
+#bicon{
+display: none;
+color: White;
+font-size: 150%;
+}
+#closebtn{
+display: none;
+z-index:999;
+}
+
+a:hover{
+color: pink;
+}
+.linktxt{
+text-decoration:none;
+font-weight: bold;
+color: CornflowerBlue;
+background: rgba(0,0,0,0.0);		
+}
+.linktxt:hover{
+background: black;
+}
+.twitter-timeline{
+display: flex;	
+}
+footer{
+display: flex;		
+position: relative;
+margin: 0 auto;
+width: 90%;
+background: black;
+color: White;
+box-shadow: -5px 5px 20px rgba(0,0,0,0.3);
+justify-content: space-around;
+flex-wrap: wrap;
+font-size: 125%;
+padding-left: 1%;
+padding-right: 1%;
+
+}
+footer a{
+text-decoration: none;
+color: CornflowerBlue;
+
+}
+footer a:hover{
+color: red;
+}
+
+
+@media screen and (max-width:599px) {
+
+header{
+	margin-left:0%;
+	margin-right:0%;
+	width: 100%;
+}
+#content{
+	margin-left:0%;
+	margin-right:0%;
+	width: 100%;
+}
+footer{
+	margin-left:0%;
+	margin-right:0%;
+	width: 100%;
+}
+article{
+	width:90%;
+}
+aside{
+	display: none;
+}
+nav div  {
+display: none;
+height: 100%;
+width: 100%;   
+position: fixed; 
+z-index: 99; 
+background: rgba(0,0,0,0.9);
+text-align: center; 
+font-size: 200%;  
+flex-direction: column;   
+justify-content: space-between;
+padding-bottom:5%;
+padding-top: 5%;
+transition: all 0.2s;
+}
+nav div a:hover{
+font-size: 225%;
+}
+
+#bicon{
+display: flex;
+padding-right: 2%;
+background: black;
+color: white;
+text-decoration: none;
+margin: 1%;
+}
+#bicon:hover{
+background: lightpink;
+color: black;
+}
+nav {
+justify-content: flex-end;
+	
+} 
+
+
+}
+
+
