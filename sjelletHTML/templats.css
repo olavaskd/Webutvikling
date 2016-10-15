@@ -1,0 +1,63 @@
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+main{
+  background-color: #A4A4A4;
+  font-family: lucida oblique;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 5px;
+  border: 1px solid grey;
+  background-color: #A4A4A4;
+}
+li {
+  float: left;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+
+
+}
+a:link{
+  text-decoration: none;
+  font-size: 1.15em;
+  color: white;
+}
+a:hover{
+  color: white;
+}
+a:visited {
+  color: white;
+}
+header.intro{
+  background-color: #D8D8D8;
+  height: auto;
+}
+#companylogo{
+  height: auto;
+  width: 100px;
+}
+h1{
+    margin-left: 2.0em;
+    padding: 0.15em;
+    margin-bottom: 1.2em;
+    display: block;
+    font-size: 4em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0.67em;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+section#rsstwitterfeed{
+  background-color: #D8D8D8;
+}
