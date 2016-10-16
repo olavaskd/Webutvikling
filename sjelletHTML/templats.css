@@ -2,10 +2,14 @@ body{
   margin-left: 100px;
   margin-right: 100px;
 
+
 }
 main{
   background-color: #A4A4A4;
   font-family: lucida oblique;
+  border: 1px solid black;
+  margin: 0.75em;
+
 }
 ul {
   list-style-type: none;
@@ -24,16 +28,14 @@ li {
 li a {
   display: block;
   padding: 8px;
-
-
 }
 a:link{
   text-decoration: none;
   font-size: 1.15em;
   color: white;
 }
-a:hover{
-  color: white;
+a:link:hover{
+  color: #D4B928;
 }
 a:visited {
   color: white;
@@ -58,6 +60,39 @@ h1{
     -webkit-margin-end: 0px;
     font-weight: bold;
 }
+h1#logo {
+  margin-bottom: 0;
+}
 section#rsstwitterfeed{
   background-color: #D8D8D8;
+}
+section {
+  padding: 1em;
+}
+li.kontakt {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.kontakt{
+  font-size: 1em;
+  margin: 0;
+}
+header#kontakt{
+  margin-left: 9em;
+  padding: 1em;
+}
+section#kontakt {
+  background-color: #D8D8D8;
+}
+section.info{
+  background-color: white;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+ul.kontakt {
+  background-color: #D8D8D8;
+  border: 0;
+}
+footer {
+  height: auto;
 }
