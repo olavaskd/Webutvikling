@@ -1,98 +1,237 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#content{
+display: flex;
+flex-direction: column;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#maincontent{
+background: #A4A4A4;
+
+}
 body{
-  margin-left: 100px;
-  margin-right: 100px;
-
-
-}
-main{
-  background-color: #A4A4A4;
-  font-family: lucida oblique;
-  border: 1px solid black;
-  margin: 0.75em;
+height: 100%;
+width: 90%;
+margin: 0 auto;
 
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 5px;
-  border: 1px solid grey;
-  background-color: #A4A4A4;
+
+article{
+width: 90%;
+margin: 0 auto;
+ }
+
+#burger{
+display:none;
 }
-li {
-  float: left;
-  margin-right: 50px;
-  margin-left: 50px;
+#close{
+display:none;
+margin-left: 5%;
+width: 8vw;
+align-self: flex-start;
+z-index:999;
 }
 
-li a {
-  display: block;
-  padding: 8px;
+nav div{
+display: flex;
+justify-content: space-around;
+overflow: hidden;
+padding: 1%;
+border: 1px solid grey;
+background-color: black;
+
 }
-a:link{
-  text-decoration: none;
-  font-size: 1.15em;
-  color: white;
+
+nav div a {
+display: inline-flex;
+padding: 1%;
+margin: 0 auto;
+font-size: 2vw;
+color: white;
+text-decoration: none;
+z-index:80;
 }
-a:link:hover{
-  color: #D4B928;
+
+nav a:hover{
+color: #D4B928;
 }
-a:visited {
-  color: white;
-}
-header.intro{
+
+
+header{
   background-color: #D8D8D8;
-  height: auto;
+
 }
+
 #companylogo{
-  height: auto;
-  width: 100px;
+height: auto;
+width: 10vw;
+position: absolute;
+z-index: 7;
+margin-top: -2%;
 }
+
 h1{
-    margin-left: 2.0em;
-    padding: 0.15em;
-    margin-bottom: 1.2em;
-    display: block;
-    font-size: 4em;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0.67em;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
+
+font-size: 7vw;
+text-align: center;
+font-weight: bold;
 }
-h1#logo {
-  margin-bottom: 0;
+
+h2{
+font-size: 3vw;
+margin-bottom: -1%;
 }
-section#rsstwitterfeed{
-  background-color: #D8D8D8;
+
+p{
+font-size: 2vw;
 }
-section {
-  padding: 1em;
+
+.slideshow-projects {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 500px;
+  overflow: hidden;
 }
-li.kontakt {
-  margin-left: 30px;
-  margin-right: 30px;
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding: 5px;
+  color: black;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
-.kontakt{
-  font-size: 1em;
-  margin: 0;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-header#kontakt{
-  margin-left: 9em;
-  padding: 1em;
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
 }
-section#kontakt {
-  background-color: #D8D8D8;
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
 }
-section.info{
-  background-color: white;
-  margin-left: 10em;
-  margin-right: 10em;
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .6
+  }
+  to {
+    opacity: 1
+  }
 }
-ul.kontakt {
-  background-color: #D8D8D8;
-  border: 0;
+
+@keyframes fade {
+  from {
+    opacity: .6
+  }
+  to {
+    opacity: 1
+  }
 }
+
 footer {
-  height: auto;
+display: inline-flex;
+justify-content: space-around;
+background: black;
+color: white;
+}
+#copyright{
+font-size: 2vw;
+padding: 1%;
+border: 2px solid black;
+background: DarkSlateGray ;
+}
+/* mediascreen mobil*/
+
+@media screen and (max-width:599px){
+
+#burger{
+display: flex;
+width: 8vw;
+}
+#links a{
+font-size: 7vw;
+transition: all 0.2s;
+}
+#links a:hover{
+transform: scale(1.2);
+}
+
+#links{
+display: none;
+position: fixed;
+height: 100%;
+width: 100%;
+background: rgba(0,0,0,0.9);
+flex-direction: column;
+z-index: 101;
+}
+.slideshow-projects {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1px;
+  color: black;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .6
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .6
+  }
+  to {
+    opacity: 1
+  }
+}
+
+
 }
