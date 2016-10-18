@@ -1,98 +1,131 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#content{
+display: flex;
+flex-direction: column;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#maincontent{
+background: #A4A4A4;
+
+}
 body{
-  margin-left: 100px;
-  margin-right: 100px;
-
-
-}
-main{
-  background-color: #A4A4A4;
-  font-family: lucida oblique;
-  border: 1px solid black;
-  margin: 0.75em;
+height: 100%;
+width: 90%;
+margin: 0 auto;
 
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 5px;
-  border: 1px solid grey;
-  background-color: #A4A4A4;
+
+article{
+width: 90%;
+margin: 0 auto;
+ } 
+  
+#burger{
+display:none;
 }
-li {
-  float: left;
-  margin-right: 50px;
-  margin-left: 50px;
+#close{
+display:none;
+margin-left: 5%;
+width: 8vw;
+align-self: flex-start;
+z-index:999;
+}
+ 
+nav div{
+display: flex;	
+justify-content: space-around;
+overflow: hidden;
+padding: 1%;
+border: 1px solid grey;
+background-color: black;
+  
 }
 
-li a {
-  display: block;
-  padding: 8px;
+nav div a {
+display: inline-flex;
+padding: 1%;
+margin: 0 auto;
+font-size: 2vw;
+color: white;
+text-decoration: none;
+z-index:80;
 }
-a:link{
-  text-decoration: none;
-  font-size: 1.15em;
-  color: white;
+
+nav a:hover{
+color: #D4B928;
 }
-a:link:hover{
-  color: #D4B928;
-}
-a:visited {
-  color: white;
-}
-header.intro{
+
+
+header{
   background-color: #D8D8D8;
-  height: auto;
+
 }
+
 #companylogo{
-  height: auto;
-  width: 100px;
+height: auto;
+width: 10vw;
+position: absolute;
+z-index: 7;
+margin-top: -2%;
 }
+
 h1{
-    margin-left: 2.0em;
-    padding: 0.15em;
-    margin-bottom: 1.2em;
-    display: block;
-    font-size: 4em;
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0.67em;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
+   
+font-size: 7vw;
+text-align: center; 
+font-weight: bold;
 }
-h1#logo {
-  margin-bottom: 0;
+
+h2{
+font-size: 3vw;
+margin-bottom: -1%;
 }
-section#rsstwitterfeed{
-  background-color: #D8D8D8;
+
+p{
+font-size: 2vw;	
 }
-section {
-  padding: 1em;
-}
-li.kontakt {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.kontakt{
-  font-size: 1em;
-  margin: 0;
-}
-header#kontakt{
-  margin-left: 9em;
-  padding: 1em;
-}
-section#kontakt {
-  background-color: #D8D8D8;
-}
-section.info{
-  background-color: white;
-  margin-left: 10em;
-  margin-right: 10em;
-}
-ul.kontakt {
-  background-color: #D8D8D8;
-  border: 0;
-}
+
 footer {
-  height: auto;
+display: inline-flex;
+justify-content: space-around;
+background: black;
+color: white;
 }
+#copyright{
+font-size: 2vw;
+padding: 1%;
+border: 2px solid black;
+background: DarkSlateGray ;
+}
+/* mediascreen mobil*/
+
+@media screen and (max-width:599px){
+
+#burger{
+display: flex;
+width: 8vw;
+}
+#links a{
+font-size: 7vw;
+transition: all 0.2s;
+}
+#links a:hover{
+transform: scale(1.2);
+}
+
+#links{
+display: none;
+position: fixed;
+height: 100%;
+width: 100%;
+background: rgba(0,0,0,0.9);
+flex-direction: column;
+z-index: 101;
+}
+
+}
+
