@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Banana Webdesign's siste prosjekter</title>
+    <link>http://bananaweb.no</link>
+    <description>Her vil vi legge linker til de siste websidene vi har laget</description>
+    <item>
+       <title>VG.no</title>
+       <link>http://vg.no</link>
+       <description>Vi var veldig glade for at VG leide inn oss til å lage deres nye nettsted.</description>
+    </item>
+    <item>
+       <title>Norwegian</title>
+       <link>http://norwegian.no</link>
+       <description>Vi fikk mange designpriser etter at vi lagde Norwegian's nettside på personlig forespørsel fra Bjørn Kjos</description>
+    </item>
+    <item>
+       <title>DNB</title>
+       <link>http://dnb.no</link>
+       <description>Vi lagde storbanken DNBs nettsider,  de var veldig fornøyd med oss og det var også alle deres kunder.</description>
+    </item>
+    <item>
+       <title>NSB</title>
+       <link>http://nsb.no</link>
+       <description>Vi er veldig glad i miljøvennlige ting så derfor var vi kjempeglad når NSB ville at vi skulle lage deres nettsted.</description>
+    </item>
+    <item>
+       <title>Høgskolen i Østfold</title>
+       <link>http://hiof.no</link>
+       <description>Vi fikk i oppdrag å lage Høgskolen i Østfold sine sider og er fornøyd med resultatet selvom ikke alle andre er det.</description>
+    </item>
+  </channel>
+</rss>
