@@ -256,6 +256,10 @@ background: DarkSlateGray ;
   .slideShowDiv, .thumbnail{
     width:10em;
   }
+  nav,header,main,article,section, footer{
+    width:80%;
+
+  }
 }
 @media screen and (max-width:720px){
   *{
