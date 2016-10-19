@@ -15,10 +15,10 @@ function run(){
 	var kjoerSlides;
   /* var slideInterval = setInterval(nextSlide,5000); */
 	document.getElementById("btnPause").onclick = function(){
-	 clearTimeout(kjoerSlides);
+	 clearInterval(kjoerSlides);
 	}
 	document.getElementById("btnNext").onclick = function(){
-	  kjoerSlides = setTimeout(nextSlide,7500);
+	  kjoerSlides = setInterval(nextSlide,7500);
 	}
     function nextSlide() {
 
