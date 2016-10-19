@@ -6,11 +6,20 @@ var n = 1;
 function run(){
 	openMeny();
 	sluttMeny();
-	document.getElementById("next").onclick = next;
+	/*document.getElementById("next").onclick = next;
 	document.getElementById("prev").onclick = previous;
-	slideshow(1);
-}
+	slideshow(1);*/
+	var slides = document.querySelectorAll('#slides .slide');
+  var currentSlide = 0;
+  var slideInterval = setInterval(nextSlide,5000);
 
+    function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+}
+/*
       function next() {
         forward(1);
       }
@@ -40,7 +49,7 @@ function run(){
         }
           project[slide-1].style.display = "block";
       }
-
+*/
 function openMeny(){
 document.getElementById("burger").onclick = meny;
 }

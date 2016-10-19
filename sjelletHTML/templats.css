@@ -3,9 +3,7 @@
 }
 
 #content{
-display: flex;
-flex-direction: column;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
 }
 
 #maincontent{
@@ -13,43 +11,42 @@ background: #A4A4A4;
 
 }
 body{
-height: 100%;
-width: 90%;
-margin: 0 auto;
+
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color: red;
 
 }
+main{
+  display: flex;
+  flex-direction: column;
+}
 
+nav, section,header, footer,main
+{
+  padding: 1em;
+  width: 75%;
+  margin: 0 auto;
+}
+section{
+  background-color: white;
+}
 article{
-width: 90%;
-margin: 0 auto;
+  background-color: white;
  }
-
-#burger{
-display:none;
-}
-#close{
-display:none;
-margin-left: 5%;
-width: 8vw;
-align-self: flex-start;
-z-index:999;
-}
-
+ nav{
+  margin-top: -1.5em;
+  border-radius: 1em 1em 0em 0em;
+ background-color: black;
+ }
 nav div{
-display: flex;
-justify-content: space-around;
-overflow: hidden;
-padding: 1%;
-border: 1px solid grey;
 background-color: black;
 
 }
 
 nav div a {
-display: inline-flex;
 padding: 1%;
 margin: 0 auto;
-font-size: 2vw;
+font-size: 1.5vw;
 color: white;
 text-decoration: none;
 z-index:80;
@@ -61,35 +58,126 @@ color: #D4B928;
 
 
 header{
-  background-color: #D8D8D8;
-
+  display: inline-block;
+  background-color: lightgray;
 }
-
+header img{
+  float:left;
+}
+header h1{
+  position:relative;
+}
+footer{
+ background-color: black;
+ border-radius: 0em 0em 1em 1em;
+}
+.footerSection{
+  display:inline-block;
+  font-size: 0.7vw;
+  vertical-align: top;
+  background-color: black;
+  padding: 0.5em;
+  color:white;
+  margin:auto;
+  font-size: 0.8vw;
+}
 #companylogo{
 height: auto;
-width: 10vw;
-position: absolute;
-z-index: 7;
-margin-top: -2%;
+width: 6vw;
+}
+#copyright{
+  color: white;
+  text-align: center;
+  font-size: 0.7vw;
 }
 
 h1{
 
-font-size: 7vw;
+font-size: 2vw;
 text-align: center;
 font-weight: bold;
 }
 
 h2{
-font-size: 3vw;
-margin-bottom: -1%;
+font-size: 1.5vw;
+}
+h5{
+  font-size:1.5vw;
 }
 
-p{
-font-size: 2vw;
+/*
+essential styles:
+these make the slideshow work
+*/
+
+#slides {
+    position: relative;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
 }
 
-.slideshow-projects {
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 80%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+.slide {
+    padding: 1em;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+    border-radius:0.8em;
+}
+
+.slide:nth-of-type(1) {
+    background: red;
+}
+.slide:nth-of-type(2) {
+    background: orange;
+}
+.slide:nth-of-type(3) {
+    background: green;
+}
+.slide:nth-of-type(4) {
+    background: lightblue;
+}
+.slide:nth-of-type(5) {
+    background: purple;
+}
+.thumbnail {
+  float:left;
+  display: inline-block;
+  border-style:solid;
+}
+.slideShowDiv{
+  background-color: navy;
+  display: inline-block;
+  border-style:dotted;
+  margin-left: 1em;
+  padding:1em;
+  width: 15em;
+}
+.slideShowDiv a{
+  color: pink;
+  text-decoration: none;
+}
+/*.slideshow-projects {
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -123,7 +211,7 @@ font-size: 2vw;
   -webkit-animation-duration: 2s;
   animation-name: fade;
   animation-duration: 2s;
-}
+}*/
 
 @-webkit-keyframes fade {
   from {
@@ -143,26 +231,24 @@ font-size: 2vw;
   }
 }
 
-footer {
+/*footer {
 display: inline-flex;
 justify-content: space-around;
-background: black;
+background: lightpink;
 color: white;
-}
-#copyright{
-font-size: 2vw;
-padding: 1%;
+}*/
+
+
+/*#copyright{
+font-size: 0.5vw;
+
 border: 2px solid black;
 background: DarkSlateGray ;
-}
+}*/
 /* mediascreen mobil*/
 
 @media screen and (max-width:599px){
 
-#burger{
-display: flex;
-width: 8vw;
-}
 #links a{
 font-size: 7vw;
 transition: all 0.2s;
@@ -174,9 +260,7 @@ transform: scale(1.2);
 #links{
 display: none;
 position: fixed;
-height: 100%;
-width: 100%;
-background: rgba(0,0,0,0.9);
+background: navy;
 flex-direction: column;
 z-index: 101;
 }
