@@ -11,9 +11,17 @@ function run(){
 	slideshow(1);*/
 	var slides = document.querySelectorAll('#slides .slide');
   var currentSlide = 0;
-  var slideInterval = setInterval(nextSlide,5000);
-
+	var running;
+	var kjoerSlides;
+  /* var slideInterval = setInterval(nextSlide,5000); */
+	document.getElementById("btnPause").onclick = function(){
+	 clearTimeout(kjoerSlides);
+	}
+	document.getElementById("btnNext").onclick = function(){
+	  kjoerSlides = setTimeout(nextSlide,7500);
+	}
     function nextSlide() {
+
     slides[currentSlide].className = 'slide';
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
