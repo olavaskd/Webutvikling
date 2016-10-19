@@ -252,7 +252,25 @@ background: DarkSlateGray ;
 /* mediascreen mobil*/
 
 @media screen and (max-width:599px){
+  *{
+    font-size: 3vw;
+  }
+nav,header,main,article,section, footer{
+  width:100%;
 
+}
+h1{
+  font-size:8vw;
+}
+h2{
+  font-size: 6vw;
+}
+h5{
+  font-size: 4vw;
+}
+#slides, .slideControls{
+  display:none;
+}
 #links a{
 font-size: 7vw;
 transition: all 0.2s;
